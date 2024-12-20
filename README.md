@@ -13,7 +13,7 @@ The Movies app is a simple task based application that displays a list of popula
 ## Getting Started
 1. Clone or download the project from this GitHub repository.
 2. Open the project in Xcode.
-3. open Movies/Movies/APIService/TmdbAPI.swift file and in two places replace "add api key" with "Bearer Auth_Token" you will get on [Auth Token](https://www.themoviedb.org/settings/api)
+3. open Movies/Movies/APIService/TmdbAPI.swift file and in two places replace "access_token" with "Bearer Access_Token" you will get on [Access Token](https://www.themoviedb.org/settings/api)
 4. Build and run the app on your iOS device or simulator.
 5. Explore the list of popular movies and click on a movie to view its details.
 
