@@ -42,8 +42,7 @@ class MovieDataTableViewCell: UITableViewCell {
     }
 
     func setIconImage(from path: String) {
-        let baseUrl = "https://image.tmdb.org/t/p/original/"
-        let urlString = baseUrl + path
+        let urlString = NetworkConstant.shared.imageBaseUrl + path
         setImage(for: icon, urlString: urlString)
     }
 

@@ -16,11 +16,11 @@ class MovieDetailViewModel: NSObject {
     }
 
     var posterImageURL: String {
-        return "https://image.tmdb.org/t/p/original/" + (movieDetails?.poster_path ?? "")
+        return NetworkConstant.shared.imageBaseUrl + (movieDetails?.poster_path ?? "")
     }
 
     var backdropImageURL: String {
-        return "https://image.tmdb.org/t/p/original/" + (movieDetails?.backdrop_path ?? "")
+        return NetworkConstant.shared.imageBaseUrl + (movieDetails?.backdrop_path ?? "")
     }
 
     var title:String {

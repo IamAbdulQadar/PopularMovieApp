@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CA4C7072D15A4CE006A5B20 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4C7062D15A4CE006A5B20 /* NetworkConstant.swift */; };
+		8CA4C7082D15A4CE006A5B20 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4C7062D15A4CE006A5B20 /* NetworkConstant.swift */; };
 		9DFF9085C18B774920EDA1A8 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D6A83A779B190E44867078 /* Pods_Movies.framework */; };
 		FB57376C4917EF04D8681085 /* Pods_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A8099ACC8A9F5D33EB9321 /* Pods_MoviesTests.framework */; };
 		FF36F45B2A987D33008C2216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36F45A2A987D33008C2216 /* AppDelegate.swift */; };
@@ -28,11 +30,11 @@
 		FF86A2172A98FD0600DBB4CD /* GeneralLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86A2142A98FD0600DBB4CD /* GeneralLabelTableViewCell.swift */; };
 		FF86A2182A98FD0600DBB4CD /* GeneralLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF86A2152A98FD0600DBB4CD /* GeneralLabelTableViewCell.xib */; };
 		FF86A2192A98FD0600DBB4CD /* GeneralLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF86A2152A98FD0600DBB4CD /* GeneralLabelTableViewCell.xib */; };
-		FFC95D792A9889FE00130AC5 /* TmdbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D782A9889FE00130AC5 /* TmdbAPI.swift */; };
+		FFC95D792A9889FE00130AC5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D782A9889FE00130AC5 /* APIHandler.swift */; };
 		FFC95D7B2A98914D00130AC5 /* CustomJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D7A2A98914D00130AC5 /* CustomJSONParser.swift */; };
 		FFC95D7E2A9891FA00130AC5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D7D2A9891FA00130AC5 /* Extension.swift */; };
 		FFC95D802A98920300130AC5 /* CustomJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D7A2A98914D00130AC5 /* CustomJSONParser.swift */; };
-		FFC95D812A98920300130AC5 /* TmdbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D782A9889FE00130AC5 /* TmdbAPI.swift */; };
+		FFC95D812A98920300130AC5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D782A9889FE00130AC5 /* APIHandler.swift */; };
 		FFC95D822A98920500130AC5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D7D2A9891FA00130AC5 /* Extension.swift */; };
 		FFC95D882A9892D300130AC5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D872A9892D300130AC5 /* Movie.swift */; };
 		FFC95D892A9892D300130AC5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95D872A9892D300130AC5 /* Movie.swift */; };
@@ -63,6 +65,7 @@
 /* Begin PBXFileReference section */
 		58A8099ACC8A9F5D33EB9321 /* Pods_MoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7EE874DF62981187DFF8D8 /* Pods-Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.debug.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.debug.xcconfig"; sourceTree = "<group>"; };
+		8CA4C7062D15A4CE006A5B20 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		A3D6A83A779B190E44867078 /* Pods_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D7ABB0642C9BB6858D65A5 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 		BC603CD92DE4F8E6B042CE02 /* Pods-MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-MoviesTests/Pods-MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +85,7 @@
 		FF86A2112A98F4FD00DBB4CD /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		FF86A2142A98FD0600DBB4CD /* GeneralLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLabelTableViewCell.swift; sourceTree = "<group>"; };
 		FF86A2152A98FD0600DBB4CD /* GeneralLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralLabelTableViewCell.xib; sourceTree = "<group>"; };
-		FFC95D782A9889FE00130AC5 /* TmdbAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbAPI.swift; sourceTree = "<group>"; };
+		FFC95D782A9889FE00130AC5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		FFC95D7A2A98914D00130AC5 /* CustomJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomJSONParser.swift; sourceTree = "<group>"; };
 		FFC95D7D2A9891FA00130AC5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FFC95D872A9892D300130AC5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -180,7 +183,8 @@
 		FFC95D752A98893000130AC5 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
-				FFC95D782A9889FE00130AC5 /* TmdbAPI.swift */,
+				FFC95D782A9889FE00130AC5 /* APIHandler.swift */,
+				8CA4C7062D15A4CE006A5B20 /* NetworkConstant.swift */,
 				FFC95D7A2A98914D00130AC5 /* CustomJSONParser.swift */,
 			);
 			path = APIService;
@@ -418,9 +422,10 @@
 				FFC95D8F2A9897DF00130AC5 /* MoviesListViewController.swift in Sources */,
 				FFC95D7B2A98914D00130AC5 /* CustomJSONParser.swift in Sources */,
 				FFC95D942A989AAD00130AC5 /* MoviesListViewModel.swift in Sources */,
+				8CA4C7082D15A4CE006A5B20 /* NetworkConstant.swift in Sources */,
 				FFC95D982A98A75900130AC5 /* MovieDataTableViewCell.swift in Sources */,
 				FF86A20F2A98EE2300DBB4CD /* Details.swift in Sources */,
-				FFC95D792A9889FE00130AC5 /* TmdbAPI.swift in Sources */,
+				FFC95D792A9889FE00130AC5 /* APIHandler.swift in Sources */,
 				FF36F45D2A987D33008C2216 /* SceneDelegate.swift in Sources */,
 				FFC95D8B2A9892E200130AC5 /* PopularMovies.swift in Sources */,
 				FFC95D7E2A9891FA00130AC5 /* Extension.swift in Sources */,
@@ -438,7 +443,7 @@
 			files = (
 				FFC95D902A9897DF00130AC5 /* MoviesListViewController.swift in Sources */,
 				FF36F4722A987D36008C2216 /* MoviesTests.swift in Sources */,
-				FFC95D812A98920300130AC5 /* TmdbAPI.swift in Sources */,
+				FFC95D812A98920300130AC5 /* APIHandler.swift in Sources */,
 				FF86A2102A98EE2300DBB4CD /* Details.swift in Sources */,
 				FFC95D822A98920500130AC5 /* Extension.swift in Sources */,
 				FF86A2132A98F4FD00DBB4CD /* MovieDetailViewModel.swift in Sources */,
@@ -449,6 +454,7 @@
 				FFC95D802A98920300130AC5 /* CustomJSONParser.swift in Sources */,
 				FF86A2172A98FD0600DBB4CD /* GeneralLabelTableViewCell.swift in Sources */,
 				FFC95D952A989AAD00130AC5 /* MoviesListViewModel.swift in Sources */,
+				8CA4C7072D15A4CE006A5B20 /* NetworkConstant.swift in Sources */,
 				FFC95D992A98A75A00130AC5 /* MovieDataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

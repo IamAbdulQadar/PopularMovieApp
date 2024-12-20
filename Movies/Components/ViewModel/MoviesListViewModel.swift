@@ -35,7 +35,7 @@ class MoviesListViewModel: NSObject {
     }
 
     func fetchPopularMovies(completion: @escaping () -> Void) {
-        TmdbAPI.fetchPopularMoviesList() { data in
+        APIHandler.fetchPopularMoviesList() { data in
             if let data = data {
                 self.parseDataIntoModel(movies: data)
                 completion()
@@ -46,7 +46,7 @@ class MoviesListViewModel: NSObject {
     }
 
     func fetchMovieDetail(id:Int, completion: @escaping () -> Void) {
-        TmdbAPI.fetchMovieDetails(id: id) { data in
+        APIHandler.fetchMovieDetails(id: id) { data in
             if let data = data {
                 self.parseMovieDetailsDataIntoModel(movies: data)
                 completion()

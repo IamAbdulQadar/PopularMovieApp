@@ -28,7 +28,7 @@ class MovieDetailViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.navigationBar.tintColor = .black
     }
 
     // MARK: - Custom Functions
